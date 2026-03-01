@@ -823,6 +823,25 @@ nav{
 .plan-feats li::before{content:'▸';color:var(--teal);font-size:10px;flex-shrink:0}
 .plan-feats li.no{text-decoration:line-through;opacity:.28}
 .plan-feats li.no::before{color:var(--muted2)}
+.pricing-grid--single{
+  grid-template-columns:minmax(0,1fr);
+  max-width:780px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.plan.single::before{
+  content:'LIFETIME ACCESS';
+  position:absolute;
+  top:-1px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--teal);
+  color:#000;
+  font-family:'DM Mono';
+  font-size:9px;
+  letter-spacing:2px;
+  padding:5px 16px;
+}
 
 /* ══════════════════════════════════════════
    LICENSE
@@ -1262,7 +1281,7 @@ body.menu-open{overflow:hidden}
       <span class="t-icon">☀️</span>
       <span class="t-label">LIGHT</span>
     </button>
-    <a href="#pricing" class="nav-cta">Get VaultX — $499</a>
+    <a href="#pricing" class="nav-cta">Get VaultX — $999</a>
     <button class="hamburger" id="hamburger" type="button" onclick="toggleMenu()" aria-label="Open menu" aria-controls="mobile-drawer" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -1279,7 +1298,7 @@ body.menu-open{overflow:hidden}
   <a href="#video" data-nav-link onclick="closeMenu()">Demo</a>
   <a href="#pricing" data-nav-link onclick="closeMenu()">Pricing</a>
   <a href="#faq" data-nav-link onclick="closeMenu()">FAQ</a>
-  <a href="#pricing" class="mob-cta" onclick="closeMenu()">⚡ Get VaultX — $499</a>
+  <a href="#pricing" class="mob-cta" onclick="closeMenu()">⚡ Get VaultX — $999</a>
   <button class="theme-btn mob-theme" type="button" onclick="toggleTheme()" aria-label="Switch theme">
     <span class="t-icon">☀️</span>
     <span class="t-label">SWITCH TO LIGHT MODE</span>
@@ -1300,10 +1319,10 @@ body.menu-open{overflow:hidden}
     <p class="hero-tag">The only EA that <em>stacks precision layers</em> on Boom &amp; Crash spikes.</p>
     <p class="hero-desc">Built for <strong>Boom 1000 / 500 / 300</strong> and <strong>Crash 1000 / 500 / 300</strong>. VaultX tracks consecutive run candles, enters at your threshold, and scales up to 5 layers with automatic breakeven, peak-profit trailing, and compound lot sizing from one on-chart glass dashboard.</p>
     <div class="hero-btns">
-      <a href="https://gumroad.com/YOUR_LINK" target="_blank" class="btn btn-teal">⚡ Buy VaultX — $499</a>
+      <a href="https://gumroad.com/YOUR_LINK" target="_blank" class="btn btn-teal">⚡ Buy VaultX — $999</a>
       <a href="#how" class="btn btn-ghost">See How It Works →</a>
     </div>
-    <p class="hero-price-line"><strong>$499</strong> &nbsp;·&nbsp; One-time · Lifetime · Instant delivery · No subscription</p>
+    <p class="hero-price-line"><strong>$999</strong> &nbsp;·&nbsp; One-time · Lifetime · Instant delivery · No subscription</p>
   </div>
 
   <div class="hero-visual">
@@ -1598,57 +1617,21 @@ body.menu-open{overflow:hidden}
   <div class="sec-tag">// 06 — Pricing</div>
   <h2 class="sec-title">ONE PAYMENT.<br>LIFETIME ACCESS.</h2>
   <p class="sec-desc">No subscriptions or monthly fees. Pay once, keep lifetime access, and receive all future updates.</p>
-  <div class="pricing-grid">
-    <div class="plan">
-      <div class="plan-n">Starter</div>
-      <div class="plan-price"><sup>$</sup>199</div>
-      <div class="plan-period">One-time · 1 MT5 Account</div>
+  <div class="pricing-grid pricing-grid--single">
+    <div class="plan single">
+      <div class="plan-n">VaultX Lifetime License</div>
+      <div class="plan-price"><sup>$</sup>999</div>
+      <div class="plan-period">One-time Payment · Lifetime Access</div>
       <ul class="plan-feats">
-        <li>1 MT5 Account License</li>
-        <li>All 6 Boom/Crash Symbols</li>
-        <li>Full Layer Entry System</li>
-        <li>Fixed Lot Mode</li>
-        <li>Breakeven &amp; Trail</li>
-        <li>Glass Dashboard</li>
-        <li>Email Support</li>
-        <li class="no">Compound Mode</li>
-        <li class="no">Priority Updates</li>
-      </ul>
-      <a href="https://gumroad.com/YOUR_LINK" target="_blank" class="btn btn-outline" style="display:block;text-align:center;">Buy Starter</a>
-    </div>
-    <div class="plan hot">
-      <div class="plan-n">Professional</div>
-      <div class="plan-price"><sup>$</sup>499</div>
-      <div class="plan-period">One-time · 3 MT5 Accounts</div>
-      <ul class="plan-feats">
-        <li>3 MT5 Account Licenses</li>
-        <li>All 6 Boom/Crash Symbols</li>
-        <li>Full Layer Entry System</li>
+        <li>Full VaultX EA System (All Features Unlocked)</li>
         <li>Fixed Lot + Compound Mode</li>
-        <li>Breakeven &amp; Peak Trail</li>
-        <li>Glass Dashboard</li>
-        <li>Backtest CSV Logger</li>
-        <li>Lifetime Updates</li>
-        <li>Priority Support</li>
+        <li>Breakeven + Peak-Profit Trailing</li>
+        <li>Live Glass Dashboard + Real-Time P&amp;L</li>
+        <li>Backtest CSV Logger + Optimization Workflow</li>
+        <li>All Future Updates Included</li>
+        <li>Priority Support + Community Access</li>
       </ul>
-      <a href="https://gumroad.com/YOUR_LINK" target="_blank" class="btn btn-teal" style="display:block;text-align:center;">Buy Professional</a>
-    </div>
-    <div class="plan">
-      <div class="plan-n">Elite</div>
-      <div class="plan-price"><sup>$</sup>997</div>
-      <div class="plan-period">One-time · Unlimited Accounts</div>
-      <ul class="plan-feats">
-        <li>Unlimited MT5 Accounts</li>
-        <li>All 6 Boom/Crash Symbols</li>
-        <li>Full Layer Entry System</li>
-        <li>Fixed Lot + Compound Mode</li>
-        <li>Breakeven &amp; Peak Trail</li>
-        <li>Glass Dashboard</li>
-        <li>Backtest CSV Logger</li>
-        <li>Lifetime Updates</li>
-        <li>VIP Direct Support</li>
-      </ul>
-      <a href="https://gumroad.com/YOUR_LINK" target="_blank" class="btn btn-outline" style="display:block;text-align:center;">Buy Elite</a>
+      <a href="https://gumroad.com/YOUR_LINK" target="_blank" class="btn btn-teal" style="display:block;text-align:center;">Buy Lifetime Access — $999</a>
     </div>
   </div>
 </section>
@@ -1675,7 +1658,7 @@ body.menu-open{overflow:hidden}
       <div><span class="t-p">&gt;</span> license.activate(<span class="t-y">"VX-XXXX-XXXX-XXXX"</span>)</div><br>
       <div><span class="t-g">✓ License valid</span></div>
       <div><span class="t-g">✓ Account bound: #12345678</span></div>
-      <div><span class="t-g">✓ Plan: Professional · 3 accounts</span></div>
+      <div><span class="t-g">✓ Plan: Lifetime Access</span></div>
       <div><span class="t-g">✓ Expiry: Lifetime</span></div><br>
       <div><span class="t-p">&gt;</span> ea.initialize()</div><br>
       <div><span class="t-g">✓ VaultX v35 LAYERS loaded</span></div>
@@ -1734,7 +1717,7 @@ body.menu-open{overflow:hidden}
 
     <div class="faq-item">
       <div class="faq-q">Can I run VaultX on multiple symbols at once?<span class="faq-ico" aria-hidden="true">+</span></div>
-      <div class="faq-a">Yes. VaultX can run on all 6 symbols simultaneously by attaching it to separate charts. Each instance operates independently with its own layer tracking and P&amp;L. Professional license covers 3 MT5 accounts; Elite covers unlimited. Each chart instance uses the same magic number by default — adjust MAGIC_NUMBER in inputs to differentiate instances if needed.</div>
+      <div class="faq-a">Yes. VaultX can run on all 6 symbols simultaneously by attaching it to separate charts. Each instance operates independently with its own layer tracking and P&amp;L. The Lifetime Access license includes full system access and updates. Each chart instance uses the same magic number by default — adjust MAGIC_NUMBER in inputs to differentiate instances if needed.</div>
     </div>
 
     <div class="faq-item">
@@ -1754,7 +1737,7 @@ body.menu-open{overflow:hidden}
 
     <div class="faq-item">
       <div class="faq-q">What kind of support do I get?<span class="faq-ico" aria-hidden="true">+</span></div>
-      <div class="faq-a">Starter includes email support with 48hr response. Professional includes priority support via the Telegram channel. Elite includes direct VIP access for setup guidance, optimization help, and strategy discussions. All license holders get access to the community channel where settings, results, and updates are shared regularly.</div>
+      <div class="faq-a">Lifetime Access includes priority support via Telegram plus community channel access where settings, results, release notes, and updates are shared regularly. You also get direct setup guidance for activation and initial configuration.</div>
     </div>
 
   </div>
